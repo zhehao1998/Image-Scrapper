@@ -1,3 +1,14 @@
+Adapted code from Oh Yicong: https://github.com/ohyicong/Google-Image-Scraper
+For detailed installation please refer to Yicong's Github
+
+# Main Changes
+1. Added a scaling parameter for downloaded images
+2. Added a grayscale option when downloading
+3. Added a file type option (e.g. png/jpg) when saving images
+4. Improved scrapping speed of scrapper
+5. Fixed minor bugs and ensure web scrapper downloaded exactly the number of items requested
+
+# Usage
 Run main.py to scrape google images.
 Change settings file to edit parameters.
 
@@ -11,10 +22,6 @@ GRAYSCALE=False
 
 FILETYPE = JPEG/PNG
 RESOLUTION = 0x0 to save in default resolution.
-
-
-# Google Image Scraper
-A library to scrap google images
 
 ## Pre-requisites:
 1. Pip install Selenium Library
@@ -36,35 +43,3 @@ A library to scrap google images
     ```
     python main.py
     ```
-
-## Usage:
-```python
-#Import libraries (Don't change)
-from GoogleImageScrapper import GoogleImageScraper
-import os
-from patch import webdriver_executable
-
-#Define file path (Don't change)
-webdriver_path = os.path.normpath(os.path.join(os.getcwd(), 'webdriver', webdriver_executable()))
-image_path = os.path.normpath(os.path.join(os.getcwd(), 'photos'))
-
-#Add new search key into array ["cat","t-shirt","apple","orange","pear","fish"]
-search_keys= ["cat","t-shirt"]
-
-#Parameters
-number_of_images = 10
-headless = True
-min_resolution=(0,0)
-max_resolution=(1920,1080)
-
-#Main program
-for search_key in search_keys:
-    image_scrapper = GoogleImageScraper(webdriver_path,image_path,search_key,number_of_images,headless,min_resolution,max_resolution)
-    image_urls = image_scrapper.find_image_urls()
-    image_scrapper.save_images(image_urls)
-
-```
-## Youtube Video:
-[![IMAGE ALT TEXT](https://github.com/ohyicong/Google-Image-Scraper/blob/master/youtube_thumbnail.PNG)](https://youtu.be/QZn_ZxpsIw4 "Google Image Scraper")
-
-Do remember to like, share and subscribe!

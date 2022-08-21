@@ -1,4 +1,5 @@
 Adapted code from Oh Yicong: https://github.com/ohyicong/Google-Image-Scraper
+
 For detailed installation please refer to Yicong's Github
 
 # Main Changes

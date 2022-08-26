@@ -4,10 +4,10 @@ For detailed installation please refer to Yicong's Github
 
 # Main Changes
 1. Added a scaling parameter for downloaded images
-2. Added a grayscale option when downloading
+2. Added a grayscale converstion option for downloaded images
 3. Added a file type option (e.g. png/jpg) when saving images
-4. Improved scrapping speed of scrapper
-5. Fixed minor bugs and ensure web scrapper downloaded exactly the number of items requested
+4. Improved performance of scrapper (scrapping speed and user friendliness)
+5. Fixed minor bugs and issues (such as not downloading specified number of images)
 
 # Usage
 Run main.py to scrape google images.

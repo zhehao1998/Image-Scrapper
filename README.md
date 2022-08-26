@@ -15,14 +15,15 @@ Change settings file to edit parameters.
 
 Example:
 
-SEARCH_TERMS=[loackers, quadratini]
-NUMBER_OF_IMAGES=5
-FILETYPE=PNG
-RESOLUTION=300x300
-GRAYSCALE=False
+SEARCH_TERMS=[cat, dog]  
+
+NUMBER_OF_IMAGES=5  
+
+RESOLUTION=300x300 (0x0 to save in native resolution)
+
+GRAYSCALE=False  
 
 FILETYPE = JPEG/PNG
-RESOLUTION = 0x0 to save in default resolution.
 
 ## Pre-requisites:
 1. Pip install Selenium Library

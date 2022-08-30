@@ -29,4 +29,4 @@ FILETYPE = JPEG/PNG
 1. Pip install Selenium Library
 2. Pip install PIL
 3. Download Google Chrome 
-4. Download Google Webdriver based on your Chrome version
+4. Download Google Webdriver based on your Chrome version (To check Chrome version: more options --> Help --> About Google Chrome)
